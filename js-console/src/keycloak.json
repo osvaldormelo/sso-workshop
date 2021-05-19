@@ -1,5 +1,10 @@
 {
-  "realm" : "master",
-  "auth-server-url" : "https://sso-rhsso-lab.apps.shared-na46.openshift.opentlc.com/auth",
-  "resource" : "js-console"
+  
+  "realm": "master",
+  "auth-server-url": "https://sso-rhsso-lab.apps.shared-na46.openshift.opentlc.com/auth",
+  "ssl-required": "external",
+  "resource": "js-console",
+  "public-client": true,
+  "confidential-port": 0
+
 }
