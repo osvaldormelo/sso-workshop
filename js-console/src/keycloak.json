@@ -1,10 +1,12 @@
 {
-  
-  "realm": "master",
-  "auth-server-url": "https://sso-rhsso-lab.apps.shared-na46.openshift.opentlc.com/auth",
-  "ssl-required": "external",
-  "resource": "js-console",
-  "public-client": true,
+  "realm": "Rommel",
+  "auth-server-url": "https://sso-rhsso.apps.shared-na46.openshift.opentlc.com/auth/",
+  "ssl-required": "none",
+  "resource": "aplicacao-rommel",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "2520b100-17e8-47ac-905a-b9383f0370ec"
+  },
+  "use-resource-role-mappings": true,
   "confidential-port": 0
-
 }
