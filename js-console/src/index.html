@@ -132,7 +132,13 @@
         event('Init Error');
     });
     function elevateAuthenticationLevel() {
-    kc.updateToken(-1).then(function() { output(keycloak.idTokenParsed); profile() });
+    kc.login({
+        acr : { 
+            values: ['2'],
+            essential: true
+         }
+         
+    });
 }
 
 </script>
