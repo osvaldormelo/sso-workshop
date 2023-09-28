@@ -36,6 +36,7 @@
             <li><a href="#" onclick="output(kc.idToken)">ID Token</a></li>
             <li><a href="#" onclick="output(kc.token)">Access Token</a></li>
             <li><a href="#" onclick="output(kc.refreshToken)">Refresh Token</a></li>
+            <li><a href="#" onclick="elevateAuthenticationLevel()">Authentication Level 2</a></li>
         </ul>
     </div>
 </nav>
@@ -124,6 +125,12 @@
     }).error(function() {
         event('Init Error');
     });
+    function elevateAuthenticationLevel() {
+    kc.login({
+        scope: 'openid',
+        acr_values: 'aal2'
+    });
+}
 
 </script>
 </body>
